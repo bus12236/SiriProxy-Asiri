@@ -15,23 +15,5 @@ class SiriProxy::Plugin::Asiri < SiriProxy::Plugin
   
     request_completed
   end
-
-  listen_for /مرحبا/ do
-    say "أهلين", spoken: "Ahleen"
-  
-    request_completed
-  end
-
-  listen_for /الحال/ do
-    say "الحمدلله، وأنت، كيف حالك؟", spoken: "Alhamdulillah, wa ant, keef halek?"
-  
-    request_completed
-  end
-
-  listen_for /هل سيربح/ do
-    say "يمقن يربح ويمقن لا", spoken: "Yamken Yerbah Wa Yamken La!"
-  
-    request_completed
-  end
   
 end
