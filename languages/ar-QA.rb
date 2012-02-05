@@ -10,8 +10,8 @@
 
 class SiriProxy::Plugin::Asiri < SiriProxy::Plugin
   
-  listen_for /عليكم/ do
-    say "وعليكم السلام", spoken: "Walikum Alsalam"
+  listen_for /Hi/ do
+    say "สวัสดีค่ะ", spoken: "Sawasdeeka"
   
     request_completed
   end
